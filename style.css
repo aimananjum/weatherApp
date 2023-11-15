@@ -13,7 +13,7 @@
 .card{
     width: 350px;
    
-    min-height: 500px;
+    height: 500px;
     background-color: beige;
     background-image: linear-gradient(135deg,rgb(129, 255, 234),rgb(0, 69, 82));
     border-radius: 15px;
