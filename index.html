@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="search-container">
+                <input id="cityname" value="Bangalore" class="input" type="text" placeholder="Enter City name" />
+                <div class="search-btn">
+                    <button onclick="checkWeather()">
+                        <img src="images/search.png" />
+                    </button>
+                </div>
+            </div>
+            <div class="weather-img">
+                <img id="wimg" src="images/clear1.png" />
+            </div>
+            <div class="middleinfo">
+                <h1 id="temp"></h1>
+                <p id="city"></p>
+            </div>
+            <div class="additional-info">
+                <div class="grp">
+                    <img src="images/ihumidity.png" />
+                    <div class="subinfo">
+                        <span id="humidity" class="value"></span><br>
+                        <span>Humidity</span>
+                    </div>
+                </div>
+                <div class="grp">
+                    <img src="images/wind.png" />
+                    <div class="subinfo">
+                        <span id="wind" class="value"></span><br>
+                        <span>Wind speed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
